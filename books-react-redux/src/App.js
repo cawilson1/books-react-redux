@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Book from "./components/Books";
 import axios from "axios";
 import { Link, Router } from "@reach/router";
+import Details from './components/Details'
 
 function App() {
   const [properties, setProperties] = useState({});
@@ -24,6 +25,7 @@ function App() {
     <div>
       <Router>
         <Book path="/" props={properties} />
+        <Details path="/details"/>
       </Router>
     </div>
   );
