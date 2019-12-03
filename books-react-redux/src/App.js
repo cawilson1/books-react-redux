@@ -20,12 +20,12 @@ function App() {
         console.log(err);
       });
   }, []);
-  console.log(properties);
+  //console.log(properties);
   return (
     <div>
       <Router>
         <Book path="/" props={properties} />
-        <Details path="/details"/>
+        <Details path="/details/:_id" />
       </Router>
     </div>
   );
