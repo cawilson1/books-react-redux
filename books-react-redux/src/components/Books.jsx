@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-function Book({ props }) {
+function Books({ props }) {
   console.log(props);
   console.log("here");
   const [year, setYear] = useState("");
@@ -80,4 +80,4 @@ function Book({ props }) {
 //     <br />
 //     <img src={props.img_url} alt="img" />
 //   </div>
-export default Book;
+export default Books;
