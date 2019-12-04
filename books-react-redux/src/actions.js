@@ -8,3 +8,7 @@ export function addBook(title){
     
     return {type: ADD_BOOK, payload: title}
 }
+
+export function getVisibleBooks(){
+    
+}
